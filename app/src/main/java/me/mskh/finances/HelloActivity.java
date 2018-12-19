@@ -158,7 +158,7 @@ public class HelloActivity extends AppCompatActivity {
         initList();
 
     }
-    public boolean isSmsPermissionGranted() {
+    public  boolean isSmsPermissionGranted() {
         return ContextCompat.checkSelfPermission(this, android.Manifest.permission.READ_SMS) == PackageManager.PERMISSION_GRANTED;
     }
     private void requestReadAndSendSmsPermission() {

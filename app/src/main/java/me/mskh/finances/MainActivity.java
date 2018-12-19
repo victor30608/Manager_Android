@@ -2,11 +2,13 @@ package me.mskh.finances;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.FloatingActionButton;
+import android.support.v4.content.ContextCompat;
 import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -43,6 +45,7 @@ public class MainActivity extends AppCompatActivity
         double spen;
         double income;
     public static ArrayList<SMS> allsms=new ArrayList<>();
+    public static Calendar timesmsupdate;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -87,24 +90,23 @@ public class MainActivity extends AppCompatActivity
         bal=0;
         income=0;
         spen=0;
-        loadsms();
-
         //Загружаем список операция текущего пользователя из HelloActivity
         ArrayList<Costs> HistoryArr = HelloActivity.getCostsList();
-        for(SMS i:allsms)
-        {
-            Costs tmp=SMSParser.parse(i);
-            boolean have=false;
-            for(Costs j:HistoryArr)
-            {
-                if(j.getSum()==tmp.getSum()&&j.getDescription().equals(tmp.getDescription()))
-                {
-                    have=true;
+        if(isSmsPermissionGranted()) {
+            loadsms();
+
+
+            for (SMS i : allsms) {
+                Costs tmp = SMSParser.parse(i);
+                boolean have = false;
+                for (Costs j : HistoryArr) {
+                    if (j.getSum() == tmp.getSum() && j.getDescription().equals(tmp.getDescription())) {
+                        have = true;
+                    }
                 }
-            }
-            if(!have&&tmp.getSum()>0)
-            {
-                HistoryArr.add(tmp);
+                if (!have && tmp.getSum() > 0) {
+                    HistoryArr.add(tmp);
+                }
             }
         }
         //Вычисляем текущий баланс
@@ -240,6 +242,13 @@ public class MainActivity extends AppCompatActivity
                 }
             }
         }
+    }
+    public void loadsmstime()
+    {
+
+    }
+    public  boolean isSmsPermissionGranted() {
+        return ContextCompat.checkSelfPermission(this, android.Manifest.permission.READ_SMS) == PackageManager.PERMISSION_GRANTED;
     }
     public void showAllRecords(View view){
         startActivity(new Intent(MainActivity.this, RecordsActivity.class));
