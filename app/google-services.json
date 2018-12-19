@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "102190208541",
+    "firebase_url": "https://financier-a4e61.firebaseio.com",
+    "project_id": "financier-a4e61",
+    "storage_bucket": "financier-a4e61.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:102190208541:android:d02896f3205193c1",
+        "android_client_info": {
+          "package_name": "me.mskh.finances"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "102190208541-dgflnn33ng8mmg2svgv6blh04t50cu5q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8c0eqpIrypixGnrhnX9ag9Doc--GtmpU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

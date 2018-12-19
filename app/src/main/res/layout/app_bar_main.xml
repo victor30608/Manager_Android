@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Это документ содержащий разметку ToolBar, Меню, Плавающей кнопки ПЛЮС и основного контента страницы
+Контент подгружается с помощью include - посредством выбора необходимого с помощью ClassActivity
+Здесь ничего не стоит менять
+-->
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/AppBar">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main" android:id="@+id/content_main"/>
+    <include layout="@layout/content_records" android:id="@+id/content_records"/>
+    <include layout="@layout/content_stats" android:id="@+id/content_stats"/>
+    <include layout="@layout/content_goals" android:id="@+id/content_goals"/>
+    <include layout="@layout/content_debts" android:id="@+id/content_debts"/>
+    <include layout="@layout/content_converter" android:id="@+id/content_converter"/>
+    <include layout="@layout/content_settings" android:id="@+id/content_settings"/>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@drawable/ic_plus"
+        app:elevation="6dp"
+        app:fabSize="normal" />
+
+</android.support.design.widget.CoordinatorLayout>

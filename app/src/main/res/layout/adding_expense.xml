@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Это документ с основной разметкой страницы Добавления Новой Записи (Операции)
+Список категорий выводится с помощью ListView и CategoryAdapter, подключаемого в AddActivity
+Именно здесь можно изменить внешний вид этой страницы
+-->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="0dp"
+    android:layout_marginTop="0dp"
+    android:layout_marginRight="0dp"
+    android:layout_marginBottom="0dp"
+    android:theme="@style/AppTheme.NoActionBar"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:background="?attr/colorButtonNormal"
+    tools:context=".AddActivity"
+    tools:showIn="@layout/app_bar_add">
+
+    <TableLayout
+        android:layout_width="386dp"
+        android:layout_height="match_parent"
+        android:gravity="left|start"
+        android:paddingLeft="0dp"
+        android:paddingTop="0dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left|center_vertical|start"
+            android:paddingLeft="20dp"
+            android:paddingRight="50dp">
+
+            <ImageView
+                android:id="@+id/sumIcon"
+                android:layout_width="wrap_content"
+                app:srcCompat="@drawable/ic_ruble" />
+
+            <EditText
+                android:id="@+id/addSum"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:ems="10"
+                android:hint="@string/strSum"
+                android:inputType="numberDecimal"
+                android:textColor="@color/primaryTextColor"
+                android:maxLength="8"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left|center_vertical|start"
+            android:paddingLeft="20dp"
+            android:paddingRight="50dp">
+
+            <ImageView
+                android:id="@+id/dateIcon"
+                app:srcCompat="@drawable/ic_calendar" />
+
+            <EditText
+                android:id="@+id/addDate"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:ems="10"
+                android:inputType="date"
+                android:textColor="@color/primaryTextColor" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left|center_vertical|start"
+            android:paddingLeft="20dp"
+            android:paddingRight="50dp">
+
+            <ImageView
+                android:id="@+id/descrIcon"
+                app:srcCompat="@drawable/ic_pencil" />
+
+            <EditText
+                android:id="@+id/addDescription"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:ems="10"
+                android:hint="@string/strDescription"
+                android:inputType="textMultiLine"
+                android:textColor="@color/primaryTextColor" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left|center_vertical|start"
+            android:paddingLeft="20dp"
+            android:paddingRight="50dp">
+
+            <CheckBox
+                android:id="@+id/income"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_span="2"
+                android:onClick="pressedIncome"
+                android:text="@string/strType"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left|center_vertical|start"
+            android:paddingLeft="20dp"
+            android:paddingRight="50dp">
+
+            <TextView
+                android:id="@+id/CategoryTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_span="2"
+                android:paddingBottom="10dp"
+                android:text="@string/categoryTitle"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="19sp" />
+        </TableRow>
+
+        <TableRow android:paddingRight="0dp">
+
+            <ListView
+                android:id="@+id/categoriesList"
+                android:layout_width="363dp"
+                android:layout_height="wrap_content"
+                android:layout_span="2" />
+        </TableRow>
+    </TableLayout>
+
+
+</android.support.constraint.ConstraintLayout>

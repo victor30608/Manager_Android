@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3aab98</color>
+    <color name="colorPrimaryDark">#1e716b</color>
+    <color name="colorAccent">#3aaa97</color>
+    <color name="primaryTextColor">#454545</color>
+    <color name="secondaryTextColor">#666666</color>
+    <color name="white">#fff</color>
+    <color name="blue">#0b65d4</color>
+    <color name="chosenCat">#e7e7e7</color>
+    <color name="expense">#e2563a</color>
+    <color name="income">#41a970</color>
+    <!-- Цвета для круговой диаграммы -->
+    <color name="colorPetsPie">#F48FB1</color>
+    <color name="colorHealthAndBeautyPie">#4DB6AC</color>
+    <color name="colorMedicinePie">#B2EBF2</color>
+    <color name="colorShoppingPie">#FFAB00</color>
+    <color name="colorTransportPie">#0091EA</color>
+    <color name="colorCafePie">#F4511E</color>
+    <color name="colorOtherPie">#C2185B</color>
+    <color name="colorTravellingPie">#4FC3F7</color>
+    <color name="colorChildrenPie">#EF9A9A</color>
+    <color name="colorClothesPie">#26C6DA</color>
+    <color name="colorEducationPie">#009688</color>
+    <color name="colorEntertainmentPie">#AB47BC</color>
+    <color name="colorHousePie">#FFD54F</color>
+    <!-- Цвет процентов -->
+    <color name="colorValuesPie">#FFFFFF</color>
+
+    <!-- Цвета графиков расходов, доходов, накоплений -->
+    <color name="colorIncomesBar">#4DB6AC</color>
+    <color name="colorExpensesBar">#B00020</color> <!-- 9C0A11 -->
+    <color name="colorAccumulationsBar">#0091EA</color>
+
+    <!-- Цвета графиков наличных на счетах -->
+    <color name="colorAccount1">#F4511E</color>
+    <color name="colorAccount2">#FFAB00</color>
+    <color name="colorAccount3">#0091EA</color>
+
+    <!-- цвет разделителя для списка целей-->
+    <color name="colorPaleGray">#E0E0E0</color>
+    <color name="colorPaleGreen">#4DB6AC</color>
+    <color name="colorDarkGreen">#00796B</color>
+    <color name="color20to40">#EF6C00</color>
+</resources>

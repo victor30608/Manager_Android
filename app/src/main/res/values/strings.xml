@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">Финансовый менеджер</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Финансовый менеджер</string>
+    <string name="nav_header_subtitle">www.miet.ru</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <!--Для меню-->
+    <string name="menu_home">Главная</string>
+    <string name="menu_stats">Статистика</string>
+    <string name="menu_records">Записи</string>
+    <string name="menu_goals">Цели</string>
+    <string name="menu_debts">Долги</string>
+    <string name="menu_converter">Конвертер</string>
+    <string name="menu_settings">Настройки</string>
+    <!--Для маленького меню-->
+    <string name="action_bills">Счета</string>
+    <string name="action_period">Период</string>
+    <!--Названия страниц-->
+    <string name="activity_main_title">Главная</string>
+    <string name="activity_hello_title">Финансовый менеджер</string>
+    <string name="activity_add_title">Новая запись</string>
+    <string name="activity_records_title">Записи</string>
+    <string name="activity_stats_title">Статистика</string>
+    <string name="activity_goals_title">Цели</string>
+    <string name="activity_debts_title">Долги</string>
+    <string name="activity_settings_title">Настройки</string>
+    <string name="activity_converter_title">Конвертер</string>
+    <!--Для Hello_activity-->
+    <string name="hello">Добро пожаловать!</string>
+    <string name="enter_your_name">Ваше имя</string>
+    <string name="go">Вперед</string>
+    <!--Для Main_activity-->
+    <string name="rubleSign">руб</string>  <!--₽-->
+    <string name="balanceDescription">баланс текущего счета</string>
+    <string name="strExpenses">Расходы:</string>
+    <string name="strRevenue">Доходы:</string>
+    <string name="strLastRecords">Последние операции</string>
+    <!--Для Add_activity-->
+    <string name="strSum">Сумма</string>
+    <string name="strDescription">Описание</string>
+    <string name="strType">&#160;&#160;Доход</string>
+    <string name="categoryTitle">Выберите категорию:</string>
+    <!--Sasha-->
+    <string name="title_activity_statistics2">Statistics2Activity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+
+
+    <!-- Кнопки выбора периода -->
+    <string-array name="periods">
+        <item>Неделя</item>
+        <item>Месяц</item>
+        <item>12 недель</item>
+        <item>6 Месяцев</item>
+        <item>Год</item>
+    </string-array>
+
+    <string name="text_view_categories">Категория расходов: </string>
+    <string name="category_all">Все</string>
+
+    <string name="text_view_accounts">Счета: </string>
+    <string name="accounts_all">Все</string>
+
+    <!-- Названия вкладок для статистики -->
+    <string-array name="statistics_tab_names">
+        <item>КАТЕГОРИИ РАСХОДОВ</item>
+        <item>СУММЫ РАСХОДОВ</item>
+        <item>Наличные на счетах</item>
+    </string-array>
+</resources>

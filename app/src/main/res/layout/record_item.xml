@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Это документ с разметкой одной единственной операции (записи), необходим для вывода списка всех(или только последних) записей
+Здесь можно менять внешний вид вывода одной записи (операции)
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_weight="2">
+
+
+    <ImageView
+        android:id="@+id/categoryImage"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_gravity="top|start"
+        android:layout_marginTop="2.5dp"
+        android:layout_marginBottom="2.5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="2">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="2">
+            <TextView
+                android:id="@+id/recordCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|start"
+                android:text="Кафе"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right|center_vertical|end"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginTop="2dp">
+
+                <TextView
+                    android:id="@+id/recordAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="600"
+                    android:textSize="16sp"
+                    android:gravity="end"
+                    android:maxLines="1" />
+
+
+                <TextView
+                    android:id="@+id/recordTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="02.10.18"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/recordDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|left"
+            android:text=""
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-1dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="me.mskh.finances">
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".HelloActivity" android:label="@string/activity_hello_title" android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" android:label="@string/activity_main_title" android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter >
+                <action android:name="me.mskh.finances.MainActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AddActivity" android:label="@string/activity_add_title" android:theme="@style/AppTheme.NoActionBar">
+        <intent-filter>
+            <action android:name="me.mskh.finances.AddActivity" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+        <activity android:name=".RecordsActivity" android:label="@string/activity_records_title" android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter >
+                <action android:name="me.mskh.finances.RecordsActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".StatisticsActivity" android:label="@string/activity_stats_title" android:theme="@style/AppTheme.NoActionBar">
+            android:screenOrientation="portrait">
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".GoalsActivity" android:label="@string/activity_goals_title" android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter >
+                <action android:name="me.mskh.finances.GoalsActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DebtsActivity" android:label="@string/activity_debts_title" android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter >
+                <action android:name="me.mskh.finances.DebtsActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SettingsActivity" android:label="@string/activity_settings_title" android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter >
+                <action android:name="me.mskh.finances.SettingsActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ConverterActivity" android:label="@string/activity_converter_title" android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter >
+                <action android:name="me.mskh.finances.ConverterActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
